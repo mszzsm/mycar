@@ -15,3 +15,5 @@ Route::get( '/',                function () { return view('welcome');   });
 Route::get( '/new-car',         function () { return view('newcar');    });
 Route::post('/add-new-car',     'CarController@store');
 Route::get( '/all-cars',        'CarController@index');
+
+Route::get( '/all-cars/{id}',   'CarController@getbyid');

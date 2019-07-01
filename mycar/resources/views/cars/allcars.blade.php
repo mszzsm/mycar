@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
    @include('layout.head')
+<style>
 
+.badge {
+  position: absolute;
+  z-index: 1;
+  top: .9375rem;
+  right: .9375rem;
+  text-transform: uppercase;
+}
+
+.card {
+    overflow: hidden;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    text-transform: uppercase;
+}
+
+.zoom {
+  transition: transform 0.5s;
+  z-index: 1;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+</style>
     <body>
    <h1> Here will be all <code>table name</code> </h1>
 
