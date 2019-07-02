@@ -12,8 +12,9 @@ class CarController extends Controller
         return view('cars.allcars', compact('cars'));
     }
 
+
     public function getbyid($id){
-        $cars = Car::where('uploadby', $id);
+        $cars = Car::where('id', $id);
         return view('cars.carbyid', compact('cars'));
     }
  

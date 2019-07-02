@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is car by id page</h1>
+    <h1>This is car by page</h1>
+    <?php  ?>
 </body>
 </html>
